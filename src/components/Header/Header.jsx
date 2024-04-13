@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { FaFlagUsa } from 'react-icons/fa';
 
 import styles from './Header.module.css';
+import { Outlet } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -36,6 +37,7 @@ export const Header = () => {
           </nav>
         </div>
       </header>
+      <Outlet />
     </>
   );
 };
